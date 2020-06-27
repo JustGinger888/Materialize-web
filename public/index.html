@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Materialize Web</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.15.5/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.15.5/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.15.5/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.15.5/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.15.5/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>   
+
+    <style>
+      .col > div{
+      background: lightblue;
+      height: 120px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <ul>
+      <li>
+        <a href="javascript.html">
+          JQuery
+        </a>
+      </li>
+      <li>
+        <a href="project.html">
+          Project
+        </a>
+      </li>
+    </ul>
+
+    <div class="container">
+      <h1>h1 Title</h1>
+      <h2>h2 Title</h2>
+      <h3>h3 Title</h3>
+      <h4>h4 Title</h4>
+      <h5>h5 Title</h5>
+      <h6>h6 Title</h6>
+      <p>Normal Text</p>
+      <p class="flow-text">Flow text</p>
+    </div>
+
+    <div class="container">
+      <h4 class="hide">Hide on ALL</h4>
+      <h4 class="hide-on-small-only">Hide on SMALL</h4>
+      <h4 class="hide-on-med-only">Hide on MEDIUM</h4>
+      <h4 class="hide-on-large-only">Hide on LARGE</h4>
+      <h4 class="hide-on-med-and-down">Hide on MEDIUM & SMALL</h4>
+      <h4 class="hide on med-and-up">Hide on MEDIUM & LARGE</h4>
+    </div>
+
+    <div class="container">
+      <h5 class="blue darken-2">This</h5>
+      <h5 class="orange lighten-2">Is</h5>
+      <h5 class="purple darken-2 white-text">A</h5>
+      <h5 class="teal lighten-1 yellow-text text-lighten-4">Colorful</h5>
+      <h5 class="yellow lighten-2 green-text text-darken-3">Quote</h5>
+    </div>
+
+    <div class="container">
+      <div class="container">
+        <h5 class="left-align">Left</h5>
+        <h5 class="center-align">Center</h5>
+        <h5 class="right-align">Right</h5>
+      </div>
+      <div class="container grey lighten-2 valign-wrapper" style="height: 200px;">
+          <h5>Vertical Alignment</h5>
+      </div>
+      <div class="container">
+        <p class="truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, aut delectus alias excepturi voluptate tenetur quaerat impedit iste! Ipsam blanditiis vero provident, et ut aperiam esse praesentium omnis. Totam, iste.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <h4>Buttons</h4>
+      <a href="#" class="btn">Normal button</a>
+      <a href="#" class="btn-small">Small button</a>
+      <a href="#" class="btn-large">Large button</a>
+      <a href="#" class="btn waves-effect waves-light">Wavey button</a>
+      <a href="#" class="btn indigo waves-effect waves-light">Indigo button</a>
+      <a href="#" class="btn disabled">Disabled button</a>
+      <h4>Floating button</h4>
+      <a href="#" class="btn-floating blue"></a>
+      <a href="#" class="btn-floating pulse pink"></a>
+      <h4>Other elements</h4>
+      <div class="btn">Div tag Button</div>
+    </div>
+
+    <div class="container">
+      <h4>Icons</h4>
+      <i class="material-icons red-text">error</i>
+      <i class="material-icons yellow-text text-darken-2">warning</i>
+      <i class="material-icons grey-text">cloud</i>
+      <i class="material-icons light-blue-text">folder</i>
+      <h4>Icons on Buttons</h4>
+      <a href="#" class="btn indigo">
+        <span>Send</span>
+        <i class="material-icons right">send</i>
+      </a>
+      <a href="#" class="btn pink waves-effect waves-light">
+        <span>Email</span>
+        <i class="material-icons left">email</i>
+      </a>
+      <h4>Icons on Floating Buttons</h4>
+      <a href="#" class="btn-floating light-blue pulse">
+        <i class="material-icons">add</i>
+      </a>
+      <a href="#" class="btn-floating red pulse">
+        <i class="material-icons">remove</i>
+      </a>
+      <a href="#" class="btn-floating orange pulse">
+        <i class="material-icons">edit</i>
+      </a>
+    </div>
+
+    <div class="container">
+      <h4>Grids</h4>
+      <div class="row">
+        <div class="col s12 m6 l4 xl2">Content</div>
+        <div class="col s12 m6 l4 xl2">Content</div>
+        <div class="col s12 m6 l4 xl2">Content</div>
+        <div class="col s12 m6 l4 xl2">Content</div>
+        <div class="col s12 m6 l4 xl2">Content</div>
+        <div class="col s12 m6 l4 xl2">Content</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h4>Shadows & Depth</h4>
+      <div class="row">
+        <div class="col s2">
+          <div></div>
+        </div>
+        <div class="col s2">
+          <div class="z-depth-1"></div>
+        </div>
+        <div class="col s2">
+          <div class="z-depth-2"></div>
+        </div>
+        <div class="col s2">
+          <div class="z-depth-3"></div>
+        </div>
+        <div class="col s2">
+          <div class="z-depth-4"></div>
+        </div>
+        <div class="col s2">
+          <div class="z-depth-5"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
